@@ -1,4 +1,4 @@
-// ignore_for_file: use_key_in_widget_constructors
+// ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors
 
 import 'package:flutter/material.dart';
 
@@ -45,6 +45,7 @@ class RecipeCard extends StatelessWidget {
       child: Stack(
         children: [
           Align(
+            alignment: Alignment.center,
             child: Padding(
               padding: EdgeInsets.symmetric(horizontal: 5.0),
               child: Text(
@@ -57,9 +58,9 @@ class RecipeCard extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
             ),
-            alignment: Alignment.center,
           ),
           Align(
+            alignment: Alignment.bottomLeft,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -103,7 +104,6 @@ class RecipeCard extends StatelessWidget {
                 )
               ],
             ),
-            alignment: Alignment.bottomLeft,
           ),
         ],
       ),
